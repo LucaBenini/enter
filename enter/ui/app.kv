@@ -1,0 +1,27 @@
+<Root>:
+    orientation: "vertical"
+    padding: "24dp"
+    spacing: "16dp"
+
+    # ── First Row ──
+    BoxLayout:
+        orientation: "horizontal"
+        spacing: "12dp"
+        size_hint_y: None
+        height: "60dp"
+
+        Button:
+            text: "Button 1"
+            on_release: root.on_button_click(1)
+
+        Button:
+            text: "Button 2"
+            on_release: root.on_button_click(2)
+
+    # ── Second Row (Empty for now) ──
+    BoxLayout:
+        orientation: "horizontal"
+        size_hint_y: 1
+        Label:
+            text: "Second Row"
+            id: second_row_label

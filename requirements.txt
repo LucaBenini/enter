@@ -1,0 +1,4 @@
+kivy[full]
+vosk
+sounddevice
+numpy
